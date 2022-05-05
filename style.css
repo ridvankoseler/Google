@@ -1,0 +1,232 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+nav ul{
+    padding: 0rem 0.5rem ;
+    
+}
+
+nav ul li{
+    display: inline-block;
+    padding: 0.5rem;
+    
+}
+
+nav ul li a{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color:rgba(121, 121, 121, 1);
+    font-size: 13px;
+    
+}
+
+nav ul li a:hover:not(button a){
+    text-decoration: underline;
+    
+}
+
+nav ul:last-child li:nth-child(3) a{
+    position: relative;
+    top: 0.7rem;
+    opacity: 0.5;
+}
+
+nav ul:last-child li:nth-child(3) a:hover{
+    position: relative;
+    top: 0.7rem;
+    opacity: 1;
+}
+
+nav ul li a img{
+    
+    top: 0.6rem;
+    width: 2rem;
+}
+
+nav ul li button {
+    background-color: rgb(66, 133, 244);
+    height: 2.1rem;
+    width: 5rem;
+    color: white;
+    border-style: none;
+    border-radius: 0.2rem;
+    
+}
+
+nav ul li button a {
+    font-size: 13px;
+    color: white;
+        
+}
+
+nav ul:first-child{
+    margin-top: 0.5rem;
+}
+
+section{
+    text-align: center;
+    margin: auto;
+    margin-top: 3rem;
+    padding: 5rem;
+}
+
+.logo{
+    padding: 1.6rem;
+}
+
+.search{
+    background-color: white;
+    border: 0.1px solid rgb(214, 208, 208);
+    width: 32rem;
+    height: 3rem;
+    margin: auto;
+    border-radius: 2rem;
+    line-height: 3rem;
+    padding-top: 0.5rem;
+}
+
+.search img:first-child{
+    opacity: 0.8;
+}
+
+.search img:last-child{
+    position: relative;
+    top: -0.4rem;
+}
+
+section div input{
+    position: relative;
+    top: -0.7rem;
+    width: 26rem;
+    height: 2.6rem;
+    border-style: none;
+    outline: none;
+    
+}
+
+.search:hover{
+    box-shadow: 0.2rem 0.2rem 0.2rem rgb(214, 208, 208);
+}
+
+.search a{
+    position: relative;
+}
+
+.search a span{
+    visibility: hidden;
+    height: 2rem;
+    line-height: 2rem;
+    width: 7.5rem;
+    background-color: rgba(214,208,208,0.5);
+    color: #000;
+    opacity: 0.8;
+    text-align: center;
+    border-radius: 0.4rem;
+    position: absolute;
+    z-index: 1 ;
+    top: 2rem;
+    left: -320%;
+}
+
+.search a:hover span{
+    visibility: visible;
+}
+
+a span::after{
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent rgba(214,208,208,1) transparent;
+}
+
+.buttons{
+    margin-top: 1.5rem;
+    margin-right: 3rem;
+}
+
+.buttons button{
+    display: inline-block;
+    width: 8rem;
+    height: 2rem;
+    opacity: 0.8;
+    border-radius: 0.2rem;
+    border-style: none;
+}
+
+.buttons button:hover{
+    opacity: 1;
+    border: 0.1rem solid rgb(214, 208, 208);
+    box-shadow: 0.08rem 0.08rem 0.08rem rgb(214, 208, 208);
+}
+
+.buttons button:hover{
+    cursor: pointer;
+}
+
+section div button{
+    margin: 1rem -1.5rem 2rem 2rem;
+}
+
+section p{
+    font-size: 0.8rem;
+}
+
+footer{
+    text-decoration: none;
+    font-family:Arial, Helvetica, sans-serif;
+    margin-top: 7rem;
+}
+
+footer div{
+    display: flex;
+    justify-content: space-between;
+}
+footer div p{
+    font-size: 15px;
+}
+footer div:last-child{
+    background-color: rgb(242, 242, 242);
+}
+
+
+footer div ul li{
+    display: inline-block;
+    padding: 0.7rem 1rem;
+    font-size: 14px;
+}
+
+footer div ul li a {
+    color:rgb(95 , 99, 104);
+    text-decoration: none;
+}
+
+footer div ul li a:hover{
+    text-decoration: underline;
+}
+
+.country{
+    color:rgb(95 , 99, 104);
+    margin-top: -1rem;
+    padding: 0.5rem 1.5rem;
+    background-color: rgb(242, 242, 242);
+    border-bottom: 1px solid rgb(214, 208, 208) ;
+}
